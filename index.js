@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generateMd = require("./utils/generateMarkdown");
+const generateMarkdowns = require("./utils/generateMarkdowns");
 
 // set the fs.writeFile function to use promises
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -81,7 +81,7 @@ const init = async () => {
         const answers = await promptUser();
 
         // create markdown content from user answers
-        const fileContent = generateMd(answers);
+        const fileContent = generateMarkdowns(answers);
 
         // write markdown content to README.md file
         await writeToFile("./output/README.md", fileContent);

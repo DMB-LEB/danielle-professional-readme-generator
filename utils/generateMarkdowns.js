@@ -71,9 +71,22 @@ function renderLicenseLink(license) {
       return ' ';
     }
    }
+
+   // Function to return a message if user doesn't want contributors
+  function renderContributingSection(confirmContributers, data) {
+  if (!confirmContributers) {
+    return `
+  Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
+    `;
+  } else {
+    return `
+  ${data}
+    `;
+  }
+}
   
   // Function to generate markdown for README
-  function generateMarkdown(data) {
+  function generateMarkdowns(data) {
     return `
     # ${data.title}
     
@@ -105,10 +118,6 @@ function renderLicenseLink(license) {
   
     ${data.usage}
     
-    For more information on how to add screenshots for examples, visit the following website:
-    
-    [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-    
     ${renderLicenseSection(data.license)}
   
     ## [Contributing](#table-of-contents)
@@ -129,4 +138,4 @@ function renderLicenseLink(license) {
   `;
   }
   
-  module.exports = generateMarkdown;
+  module.exports = generateMarkdowns;

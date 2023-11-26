@@ -11,7 +11,7 @@ node.js: 0.0.1-security
 ## Usage
 Usage would include any project that needs a README. This app allows you to quickly create a professional README with ease.
 
-[Where to watch a video example]()
+[Where to watch a video example](https://drive.google.com/file/d/1ZACMj6vt-it33N03RVcSEcRMbAFvh1Nr/view?usp=sharing)
 
 
 ## License

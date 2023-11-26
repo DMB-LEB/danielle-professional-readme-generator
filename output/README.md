@@ -1,5 +1,5 @@
 
-    # professional readme generator
+    # professional-readme-generator
     
     
     ![badge](https://img.shields.io/badge/license-MIT-blue)
@@ -31,7 +31,7 @@
   
     ## [Usage](#table-of-contents)
   
-    
+    N/A
     
     
     ## [License](#table-of-contents)
